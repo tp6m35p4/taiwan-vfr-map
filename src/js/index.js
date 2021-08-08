@@ -1,7 +1,7 @@
 let vfrmap = L.map('map').setView([24.806098, 121.435389], 10);
 vfrmap.createPane('MapLabel');
 vfrmap.getPane('MapLabel').style.zIndex = 650;
-let baseLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+let baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(vfrmap);
