@@ -3,6 +3,7 @@ vfrmap.createPane('MapLabel');
 vfrmap.getPane('MapLabel').style.zIndex = 650;
 let baseLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(vfrmap);
 let eaipvfrLayer = L.tileLayer('https://www.eaipvfr.tw/map/ENG/{z}/{x}/{y}.png', { minZoom: 5, maxZoom: 24, tms: false, id: 'eaip', zIndex: 98, maxNativeZoom: 13 }).addTo(vfrmap);
 let RportIcon = L.icon({ iconUrl: 'https://www.eaipvfr.tw/images/report01.png', iconSize: [18, 18] });
