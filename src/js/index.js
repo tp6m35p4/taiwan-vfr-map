@@ -53,5 +53,7 @@ var helipointLayer = L.geoJson(helipoint, {
 
 L.control.polylineMeasure({
     position: 'topleft',
-    unit: 'nauticalmiles',     
+    unit: 'nauticalmiles',
+    bearingTextIn: 'In',
+    bearingTextOut: 'Out',   
 }).addTo(vfrmap);
