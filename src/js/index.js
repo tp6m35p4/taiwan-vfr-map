@@ -57,5 +57,5 @@ L.control.polylineMeasure({
     unit: 'nauticalmiles',
     showBearings: true,
     bearingTextIn: 'In',
-    bearingTextOut: 'Out',   
+    bearingTextOut: 'Out',
 }).addTo(vfrmap);
