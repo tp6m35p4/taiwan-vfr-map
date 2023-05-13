@@ -1,0 +1,120 @@
+[
+  {
+    "id": "CHB",
+    "name": "長虹橋",
+    "lat": 23.4677,
+    "lng": 121.4889,
+    "ytCode": "JnD8Rk3o0BM"
+  },
+  {
+    "id": "Torik",
+    "name": "都歷",
+    "lat": 23.02011,
+    "lng": 121.32488,
+    "ytCode": "JhQuR77AR7U"
+  },
+  {
+    "id": "Sanxiantai",
+    "name": "三仙台",
+    "lat": 23.12316,
+    "lng": 121.41104,
+    "ytCode": "dQ7Sd6PGLdA"
+  },
+  {
+    "id": "Jialulan",
+    "name": "加路蘭",
+    "lat": 22.8065,
+    "lng": 121.197,
+    "ytCode": "AKl3F6cAY2Q"
+  },
+  {
+    "id": "Shitiping",
+    "name": "石梯坪",
+    "lat": 23.48525,
+    "lng": 121.51173,
+    "ytCode": "mXnigLvIL0Q"
+  },
+  {
+    "id": "DashshibiHill",
+    "name": "大石鼻山",
+    "lat": 23.42327,
+    "lng": 121.32338,
+    "ytCode": "JkoXcXI04Qk"
+  },
+  {
+    "id": "Nanliao",
+    "name": "綠島南寮漁港",
+    "lat": 22.65583,
+    "lng": 121.47453,
+    "ytCode": "wTHhv7M0vCI"
+  },
+  {
+    "id": "Jinzun",
+    "name": "金樽遊憩區",
+    "lat": 22.9451,
+    "lng": 121.27975,
+    "ytCode": "ZdqHgQwvZOw"
+  },
+  {
+    "id": "Chaikou",
+    "name": "柴口浮潛區",
+    "lat": 22.67668917323292,
+    "lng": 121.48288220719745,
+    "ytCode": "zQQSfAkjCJc"
+  },
+  {
+    "id": "Fanchuanbi",
+    "name": "綠島帆船鼻",
+    "lat": 22.6354017,
+    "lng": 121.5069,
+    "ytCode": "pLdBc8PvZko"
+  },
+  {
+    "id": "Beipu",
+    "name": "北埔安檢所",
+    "lat": 24.04168,
+    "lng": 121.622258,
+    "ytCode": "tWdI0YfY93Y",
+    "gmapLink": "https://goo.gl/maps/z2aPhFgViR2SNJKE8"
+  },
+  {
+    "id": "Nanbin",
+    "name": "南濱守望哨",
+    "lat": 23.962476,
+    "lng": 121.606996,
+    "ytCode": "ww8s-erahaU",
+    "gmapLink": "https://goo.gl/maps/Sv8fziikZosZujea9"
+  },
+  {
+    "id": "Wangyou",
+    "name": "忘憂亭",
+    "lat": 23.969592,
+    "lng": 121.612761,
+    "ytCode": "Ic6hqus0tjA",
+    "gmapLink": "https://goo.gl/maps/WFd5cBgtYADJKhq97"
+  },
+  {
+    "id": "HualienBridge",
+    "name": "花蓮大橋",
+    "lat": 23.92295,
+    "lng": 121.600451,
+    "ytCode": "oM1OOjGvmTA",
+    "gmapLink": "https://goo.gl/maps/sP9d36HXQhrJebrL6"
+  },
+  {
+    "id": "GrandCosmosRuisui",
+    "name": "瑞穗天合",
+    "lat": 23.4935236,
+    "lng": 121.3548326,
+    "ytCode": "LQcqdr-_ZCk",
+    "gmapLink": "https://goo.gl/maps/G5J7ELy9LqGfwLVD6"
+  },
+  {
+    "id": "Luye",
+    "name": "鹿野高台",
+    "lat": 22.916649,
+    "lng": 121.121799,
+    "ytCode": "KkDSzZcqQTQ",
+    "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6"
+  }
+]

@@ -207,52 +207,22 @@ vfrmap.on("polylinemeasure:add", (e) => {
   console.log(polylineMeasure.getArr());
 });
 
-let ytStreams = [
-  {
-    id: "CHB",
-    name: "長虹橋",
-    lat: 23.4677,
-    lng: 121.4889,
-    ytCode: "JnD8Rk3o0BM",
-  },
-  {
-    id: "Torik",
-    name: "都歷",
-    lat: 23.02011,
-    lng: 121.32488,
-    ytCode: "JhQuR77AR7U",
-  },
-  {
-    id: "Sanxiantai",
-    name: "三仙台",
-    lat: 23.12316,
-    lng: 121.41104,
-    ytCode: "dQ7Sd6PGLdA",
-  },
-  {
-    id: "Jialulan",
-    name: "加路蘭",
-    lat: 22.8065,
-    lng: 121.197,
-    ytCode: "AKl3F6cAY2Q",
-  },
-  {
-    id: "Shitiping",
-    name: "石梯坪",
-    lat: 23.48525,
-    lng: 121.51173,
-    ytCode: "mXnigLvIL0Q",
-  },
-];
-let yuStreamMarkers = [];
-ytStreams.forEach((e) => {
-  console.log(e.name);
-  let marker = L.marker([e.lat, e.lng], { alt: e.id })
-    .addTo(vfrmap)
-    .bindPopup(
-      `<iframe width="560" height="315" src="https://www.youtube.com/embed/${e.ytCode}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
-      {
-        maxWidth: 560,
-      }
-    );
-});
+let ytStreamMarkers = [];
+// fetch youtube streams
+fetch("/data/streams.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (streams) {
+    streams.forEach((e) => {
+      let marker = L.marker([e.lat, e.lng], { alt: e.id })
+        .addTo(vfrmap)
+        .bindPopup(
+          `<iframe width="480" height="270" src="https://www.youtube.com/embed/${e.ytCode}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+          {
+            maxWidth: 480,
+          }
+        );
+      ytStreamMarkers.push(marker);
+    });
+  });
