@@ -142,6 +142,58 @@ var helipointLayer = L.geoJson(helipoint, {
   },
 }).addTo(vfrmap);
 
+let geojsonMarkerOptions = {
+  radius: 7,
+  fillColor: "#ff7800",
+  color: "#000",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.8,
+};
+
+// let windpower = L.geoJson(windturbind, {
+//   pointToLayer: function (feature, latlng) {
+//     return L.circleMarker(latlng, geojsonMarkerOptions);
+//   },
+//   onEachFeature: function (feature, layer) {
+//     var infoset =
+//       "<div class='infoframe' style='background-color: #90AFC5;color: white;'>公司名稱:" +
+//       feature.properties.company +
+//       "</div>" +
+//       "<div class='infoframe' style='background-color: #336B87;color: white;'>電廠名稱或地點:" +
+//       feature.properties.location +
+//       "</div>" +
+//       "<div class='infoframe' style='background-color: #2A3132;color: white;'>風機編號:" +
+//       feature.properties.number +
+//       "</div>" +
+//       "<div class='infoframe' style='background-color: #763626;color: white;'>經度：" +
+//       feature.properties.wgs84x +
+//       "<br/>" +
+//       "緯度：" +
+//       feature.properties.wgs84y +
+//       "</div>" +
+//       "<div class='infoframe' style='background-color: #474747;color: white;'>機組高度:" +
+//       feature.properties.height_d +
+//       "公尺";
+//     if (feature.properties.comment != null) {
+//       infoset += "(" + feature.properties.comment + ")";
+//     }
+//     infoset += "</div>";
+//     layer.bindPopup(infoset);
+//   },
+// }).addTo(vfrmap);
+let eaipvfrWindturbine = L.tileLayer(
+  "https://www.eaipvfr.tw/map/Windturbine/{z}/{x}/{y}.png",
+  {
+    minZoom: 5,
+    maxZoom: 24,
+    tms: false,
+    id: "Windturbine",
+    zIndex: 93,
+    maxNativeZoom: 13,
+  }
+).addTo(vfrmap);
+
 let polylineMeasure = L.control.polylineMeasure({
   position: "topleft",
   unit: "nauticalmiles",
@@ -153,4 +205,54 @@ polylineMeasure.addTo(vfrmap);
 
 vfrmap.on("polylinemeasure:add", (e) => {
   console.log(polylineMeasure.getArr());
+});
+
+let ytStreams = [
+  {
+    id: "CHB",
+    name: "長虹橋",
+    lat: 23.4677,
+    lng: 121.4889,
+    ytCode: "JnD8Rk3o0BM",
+  },
+  {
+    id: "Torik",
+    name: "都歷",
+    lat: 23.02011,
+    lng: 121.32488,
+    ytCode: "JhQuR77AR7U",
+  },
+  {
+    id: "Sanxiantai",
+    name: "三仙台",
+    lat: 23.12316,
+    lng: 121.41104,
+    ytCode: "dQ7Sd6PGLdA",
+  },
+  {
+    id: "Jialulan",
+    name: "加路蘭",
+    lat: 22.8065,
+    lng: 121.197,
+    ytCode: "AKl3F6cAY2Q",
+  },
+  {
+    id: "Shitiping",
+    name: "石梯坪",
+    lat: 23.48525,
+    lng: 121.51173,
+    ytCode: "mXnigLvIL0Q",
+  },
+];
+let yuStreamMarkers = [];
+ytStreams.forEach((e) => {
+  console.log(e.name);
+  let marker = L.marker([e.lat, e.lng], { alt: e.id })
+    .addTo(vfrmap)
+    .bindPopup(
+      `<iframe width="560" height="315" src="https://www.youtube.com/embed/${e.ytCode}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+      {
+        maxWidth: 560,
+      }
+    );
 });
