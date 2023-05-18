@@ -218,7 +218,13 @@ fetch("/data/streams.json")
       let marker = L.marker([e.lat, e.lng], { alt: e.id })
         .addTo(vfrmap)
         .bindPopup(
-          `<iframe width="480" height="270" src="https://www.youtube.com/embed/${e.ytCode}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+          `<div class="videobox">
+              <iframe
+                frameborder="0"
+                src="https://www.youtube.com/embed/${e.ytCode}"
+                allowFullScreen="true"
+              ></iframe>
+            </div>`,
           {
             maxWidth: 480,
           }
