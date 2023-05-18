@@ -124,5 +124,13 @@
     "lng": 121.31703,
     "ytCode": "DliL9uMtPrI",
     "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6"
+  },
+  {
+    "id": "Fushan",
+    "name": "富山",
+    "lat": 22.8366000,
+    "lng": 121.1864200,
+    "ytCode": "Rsq95SQ26bY",
+    "gmapLink": "https://goo.gl/maps/NC6wRfdfcbZkA6pu6"
   }
 ]
