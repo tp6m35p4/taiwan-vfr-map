@@ -1,4 +1,4 @@
-let vfrmap = L.map("map").setView([24.806098, 121.435389], 10);
+let vfrmap = L.map("map").setView([22.7554164, 121.1005247], 10);
 vfrmap.createPane("MapLabel");
 vfrmap.getPane("MapLabel").style.zIndex = 650;
 let baseLayer = L.tileLayer(
