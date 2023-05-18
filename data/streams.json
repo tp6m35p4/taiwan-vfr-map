@@ -37,8 +37,8 @@
   {
     "id": "DashshibiHill",
     "name": "大石鼻山",
-    "lat": 23.42327,
-    "lng": 121.32338,
+    "lat": 23.69708431248841,
+    "lng": 121.5508932487941,
     "ytCode": "JkoXcXI04Qk"
   },
   {
@@ -126,11 +126,19 @@
     "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6"
   },
   {
+    "id": "Chike ",
+    "name": "赤科山",
+    "lat": 23.38964,
+    "lng": 121.39283,
+    "ytCode": "gxOdykEMicA",
+    "gmapLink": "https://goo.gl/maps/xmwFc53FK8ahYUQh6"
+  },
+  {
     "id": "Fushan",
     "name": "富山",
-    "lat": 22.8366000,
-    "lng": 121.1864200,
+    "lat": 22.8366,
+    "lng": 121.18642,
     "ytCode": "Rsq95SQ26bY",
-    "gmapLink": "https://goo.gl/maps/NC6wRfdfcbZkA6pu6"
+    "gmapLink": "https://goo.gl/maps/12AVuiqA3y3XAQnY7"
   }
 ]
