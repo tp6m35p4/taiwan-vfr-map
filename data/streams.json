@@ -115,7 +115,8 @@
     "lat": 22.916649,
     "lng": 121.121799,
     "ytCode": "KkDSzZcqQTQ",
-    "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6"
+    "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6",
+    "owner": "ervnsa"
   },
   {
     "id": "Liushishi",
@@ -123,7 +124,8 @@
     "lat": 23.22219,
     "lng": 121.31703,
     "ytCode": "DliL9uMtPrI",
-    "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6"
+    "gmapLink": "https://goo.gl/maps/7rGELZzY8WXoAKoq6",
+    "owner": "ervnsa"
   },
   {
     "id": "Chike ",
@@ -131,14 +133,61 @@
     "lat": 23.38964,
     "lng": 121.39283,
     "ytCode": "gxOdykEMicA",
-    "gmapLink": "https://goo.gl/maps/xmwFc53FK8ahYUQh6"
+    "gmapLink": "https://goo.gl/maps/xmwFc53FK8ahYUQh6",
+    "owner": "ervnsa"
   },
   {
     "id": "Fushan",
     "name": "富山",
-    "lat": 22.8366,
-    "lng": 121.18642,
+    "lat": 22.836602978828626,
+    "lng": 121.18643432622608,
     "ytCode": "Rsq95SQ26bY",
-    "gmapLink": "https://goo.gl/maps/12AVuiqA3y3XAQnY7"
+    "gmapLink": "https://goo.gl/maps/12AVuiqA3y3XAQnY7",
+    "owner": "TaitungAmazing"
+  },
+  {
+    "id": "Chihshang",
+    "name": "池上",
+    "lat": 23.09504340998822,
+    "lng": 121.21570511585166,
+    "ytCode": "WA7GEXVGAP0",
+    "gmapLink": "https://goo.gl/maps/UGrf8e8qPV4vm3rc7",
+    "owner": "TaitungAmazing"
+  },
+  {
+    "id": "JinzunHarbor",
+    "name": "金樽漁港",
+    "lat": 22.954130464893968,
+    "lng": 121.29325586902655,
+    "ytCode": "q3KJt-SZc2s",
+    "gmapLink": "https://goo.gl/maps/Xa1VWGwnVJfwJeUM6",
+    "owner": "TaitungAmazing"
+  },
+  {
+    "id": "Shanyuan",
+    "name": "杉原灣",
+    "lat": 22.830738038985245,
+    "lng": 121.1861588911889,
+    "ytCode": "VqS_Y8ZCj6M",
+    "gmapLink": "https://goo.gl/maps/wUpZ29D5HxRWJ8Ua7",
+    "owner": "TaitungAmazing"
+  },
+  {
+    "id": "FugangFisheryHarbor1",
+    "name": "臺東富岡漁港1",
+    "lat": 22.792274,
+    "lng": 121.192647,
+    "ytCode": "V4om5Sr5FwQ",
+    "gmapLink": "https://goo.gl/maps/FeXRyKtLFFUGVyz7A",
+    "owner": "CWB"
+  },
+  {
+    "id": "FugangFisheryHarbor2",
+    "name": "臺東富岡漁港2",
+    "lat": 22.792226,
+    "lng": 121.192384,
+    "ytCode": "X-83FGxigyA",
+    "gmapLink": "https://goo.gl/maps/FeXRyKtLFFUGVyz7A",
+    "owner": "CWB"
   }
 ]
